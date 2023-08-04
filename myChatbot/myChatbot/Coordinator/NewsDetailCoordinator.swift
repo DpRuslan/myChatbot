@@ -6,7 +6,7 @@ import Foundation
 import UIKit
 
 protocol NewsDetailCoordinatorProtocol: AnyObject {
-    func backVC()
+    func goBack()
 }
 
 class NewsDetailCoordinator: Coordinator {
@@ -25,7 +25,7 @@ class NewsDetailCoordinator: Coordinator {
 }
 
 extension NewsDetailCoordinator: NewsDetailCoordinatorProtocol {
-    func backVC() {
+    func goBack() {
         navigationController?.popViewController(animated: true)
     }
 }

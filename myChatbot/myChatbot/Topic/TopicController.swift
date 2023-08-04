@@ -40,7 +40,7 @@ class TopicController: UIViewController {
 // MARK: backPressed
     
     @objc func backPressed(_ sender: Any) {
-        viewModel.coordinator?.previousVC()
+        viewModel.coordinator?.goBack()
     }
 }
 

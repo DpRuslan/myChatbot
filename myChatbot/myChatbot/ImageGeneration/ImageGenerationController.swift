@@ -53,7 +53,7 @@ class ImageGenerationController: UIViewController {
 // MARK: backPressed
     
     @objc func backPressed(_ sender: Any) {
-        viewModel.coordinator?.backVC()
+        viewModel.coordinator?.goBack()
     }
 }
 

@@ -6,7 +6,7 @@ import Foundation
 import UIKit
 
 protocol TopicCoordinatorProtocol: AnyObject {
-    func previousVC()
+    func goBack()
 }
 
 class TopicCoordinator: Coordinator {
@@ -22,7 +22,7 @@ class TopicCoordinator: Coordinator {
 }
 
 extension TopicCoordinator: TopicCoordinatorProtocol {
-    func previousVC() {
+    func goBack() {
         navigationController?.popViewController(animated: true)
     }
 }

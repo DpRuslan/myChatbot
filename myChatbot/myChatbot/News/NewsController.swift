@@ -44,7 +44,7 @@ class NewsController: UIViewController {
 // MARK: backPressed
     
     @objc func backPressed(_ sender: Any) {
-        viewModel.coordinator?.backVC()
+        viewModel.coordinator?.goBack()
     }
 }
 
@@ -113,7 +113,7 @@ extension NewsController {
     private func errorAlert(message: String) {
         let alertController = UIAlertController(title: "Error", message: message, preferredStyle: .alert)
         alertController.addAction(UIAlertAction(title: "Ok", style: .default , handler: { [weak self] _ in
-            self?.viewModel.coordinator?.backVC()
+            self?.viewModel.coordinator?.goBack()
         }))
         
         present(alertController, animated: true)

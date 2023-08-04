@@ -6,7 +6,7 @@ import Foundation
 import UIKit
 
 protocol ImageGenerationCoordinatorProtocol: AnyObject {
-    func backVC()
+    func goBack()
 }
 
 class ImageGenerationCoordinator: Coordinator {
@@ -22,7 +22,7 @@ class ImageGenerationCoordinator: Coordinator {
 }
 
 extension ImageGenerationCoordinator: ImageGenerationCoordinatorProtocol {
-    func backVC() {
+    func goBack() {
         navigationController?.popViewController(animated: true)
     }
 }
